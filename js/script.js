@@ -1,5 +1,5 @@
 'use strict'
-const slides = document.querySelectorAll('slide')
+const slides = document.querySelectorAll('.slide')
 
 for (const slide of slides) {
   slide.addEventListener('click', () => {
@@ -11,6 +11,6 @@ for (const slide of slides) {
 
 function clearActiveClasses() {
   slides.forEach((slides) => {
-    slides.classList(remove(active))
+    slides.classList.remove('active')
   })
 }
